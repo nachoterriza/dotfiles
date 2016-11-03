@@ -1,0 +1,8 @@
+set hintchars=qwertyuiopasdfghjklñzxcvbnm
+set gui=none,tabs
+set noscrollbars
+set nohlsearch
+set incsearch
+
+map J gT
+map K gt

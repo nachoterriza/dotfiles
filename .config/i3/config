@@ -227,7 +227,7 @@ bindsym $alt+c exec --no-startup-id firejail chromium
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id smplayer --platformtheme qt5ct
 bindsym $alt+p exec --no-startup-id pcmanfm
-bindsym $alt+i exec --no-startup-id urxvt -e vim ~/dotfiles/i3/config
+bindsym $alt+i exec --no-startup-id urxvt -e vim ~/.config/i3/config
 bindsym $alt+h exec --no-startup-id /usr/share/playonlinux/playonlinux --run "Hearthstone" %F
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
