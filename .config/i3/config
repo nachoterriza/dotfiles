@@ -170,7 +170,7 @@ smart_borders on
 gaps inner 6
 gaps outer 2
 
-new_window pixel 2
+new_window pixel
 hide_edge_borders vertical
 
 set $Locker i3lock -uti ~/Imágenes/lock.png && sleep 1
@@ -243,7 +243,7 @@ bindsym $mod+F11 exec --no-startup-id mpc next
 # Autostart
 
 exec --no-startup-id feh --bg-scale ~/Imágenes/ocean.jpg
-exec --no-startup-id compton --vsync opengl --shadow-exclude '!focused'
+exec --no-startup-id compton --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id mpd
