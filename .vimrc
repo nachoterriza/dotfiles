@@ -2,6 +2,8 @@ execute pathogen#infect()
 filetype plugin indent on
 set nocompatible
 
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+
 se nu
 syntax on
 set nohlsearch

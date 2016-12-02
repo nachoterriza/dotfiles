@@ -220,9 +220,12 @@ for_window [title="Thunderbird Preferences"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [instance="Msgcompose"] floating enable
 for_window [instance="Wine"] floating enable
+for_window [class="Wine"] floating enable
 for_window [class="vmware-modconfig"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
+for_window [class="transmission"] floating enable
+for_window [class="Pidgin"] move to scratchpad
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp firefox
@@ -252,7 +255,7 @@ exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id mpd
-exec --no-startup-id tilda
+#exec --no-startup-id tilda
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id pidgin
 exec --no-startup-id firefox-sync
