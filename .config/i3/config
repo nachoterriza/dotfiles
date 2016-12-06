@@ -226,6 +226,7 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [class="transmission"] floating enable
 for_window [class="Pidgin"] move to scratchpad
+for_window [class="recordMyDesktop"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp firefox
