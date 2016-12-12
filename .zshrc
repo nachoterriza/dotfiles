@@ -86,6 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias smplayer="smplayer --platformtheme qt5ct"
+alias jondo="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -jar /home/nacho/Documentos/cosas/instaladores/JAP.jar"
 
 # Fix Inicio y Fin
 bindkey "[7~" beginning-of-line
