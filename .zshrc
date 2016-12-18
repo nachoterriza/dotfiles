@@ -1,10 +1,12 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/scripts:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/nacho/.oh-my-zsh
 export VISUAL="vim"
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
+export GTK_THEME=Arc:darker
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -86,7 +88,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias smplayer="smplayer --platformtheme qt5ct"
-alias jondo="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -jar /home/nacho/Documentos/cosas/instaladores/JAP.jar"
+#alias jondo="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -jar /home/nacho/Documentos/cosas/instaladores/Jondo/JAP.jar"
+#alias gparted="pkexec gparted"
+#alias gparted="/home/nacho/scripts/gparted.sh"
 
 # Fix Inicio y Fin
 bindkey "[7~" beginning-of-line

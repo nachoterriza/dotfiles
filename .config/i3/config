@@ -38,7 +38,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+F1 exec rofi -show run -lines 3 -eh 3 -width 100 -padding 340 -opacity "75" -bw 0 -bc "#f0f0f0" -bg "#f0f0f0" -fg "#000000" -hlbg "#f0f0f0" -hlfg "#9575cd" -font "monaco 25"
+bindsym $mod+F1 exec rofi -show run -lines 3 -eh 3 -width 100 -padding 340 -opacity "75" -bw 0 -bc "#f0f0f0" -bg "#f0f0f0" -fg "#000000" -hlbg "#f0f0f0" -hlfg "#9575cd" -font "monaco 25" -run-command "zsh -i -c '{cmd}'"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -227,7 +227,9 @@ for_window [window_type="menu"] floating enable
 for_window [class="transmission"] floating enable
 for_window [class="Pidgin"] move to scratchpad
 for_window [class="recordMyDesktop"] floating enable
+for_window [class="Lxappearance"] floating enable
 for_window [class="JAP"] floating enable
+for_window [class="GParted"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp firefox
