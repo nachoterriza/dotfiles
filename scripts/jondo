@@ -1,0 +1,2 @@
+#!/bin/bash
+exec java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -jar /home/nacho/Documentos/cosas/instaladores/Jondo/JAP.jar
