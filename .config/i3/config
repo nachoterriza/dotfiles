@@ -262,5 +262,6 @@ exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4
+exec --no-startup-id /home/nacho/scripts/checkBatt.sh
 #exec --no-startup-id urxvt -name 'scratchpad_urxvt' -g 70x4 -e ncmpcpp 
 #for_window [instance="scratchpad_urxvt"] move to scratchpad, border 1pixel
