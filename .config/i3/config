@@ -230,6 +230,7 @@ for_window [class="recordMyDesktop"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="JAP"] floating enable
 for_window [class="GParted"] floating enable
+for_window [class="mpv"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp firefox
@@ -252,7 +253,7 @@ bindsym $mod+F11 exec --no-startup-id mpc next
 
 # Autostart
 
-exec --no-startup-id feh --bg-scale ~/Imágenes/ocean.jpg
+#exec --no-startup-id feh --bg-scale ~/Imágenes/ocean.jpg
 exec --no-startup-id compton --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
