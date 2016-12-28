@@ -9,4 +9,5 @@ if xrandr | grep "$externo disconnected"; then
 else
 	xrandr --output "$interno" --off --output "$extern" --auto
 	feh --bg-scale /home/nacho/Imágenes/Legend/'Blu-ray 3.jpg'
+	pactl load-module module-bluez5-discover
 fi

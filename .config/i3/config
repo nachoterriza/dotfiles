@@ -189,9 +189,10 @@ mode "$mode_system" {
 bindsym $mod+Shift+p mode "$mode_system"
 
 # COLORES
-client.focused		#39c6fe	#39c6fe	#282828	#39c6fe
-client.focused_inactive	#39c6fe	#282828	#dcdcdc #282828
-client.unfocused	#39c6fe	#282828	#dcdcdc	#282828
+
+client.focused		#ebcb8c	#ebcb8c	#282828	#ebcb8c
+client.focused_inactive	#ebcb8c	#282828	#dcdcdc #282828
+client.unfocused	#ebcb8c	#282828	#dcdcdc	#282828
 client.urgent		#cc241d	#cc241d	#dcdcdc	#cc241d
 client.placeholder	#2d2d2d	#2d2d2d	#dcdcdc	#2d2d2d	
 
@@ -249,20 +250,14 @@ bindsym $mod+F9 exec --no-startup-id mpc prev
 bindsym $mod+F10 exec --no-startup-id mpc toggle
 bindsym $mod+F11 exec --no-startup-id mpc next
 
-#bindsym F12 [instance="scratchpad_urxvt"] scratchpad show, move position 880px 0px
-
 # Autostart
 
-#exec --no-startup-id feh --bg-scale ~/Imágenes/ocean.jpg
 exec --no-startup-id compton --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
-exec --no-startup-id mpd
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4
 exec --no-startup-id /home/nacho/scripts/checkBatt.sh
-#exec --no-startup-id urxvt -name 'scratchpad_urxvt' -g 70x4 -e ncmpcpp 
-#for_window [instance="scratchpad_urxvt"] move to scratchpad, border 1pixel
