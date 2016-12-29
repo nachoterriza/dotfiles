@@ -246,9 +246,9 @@ bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $mod+b bar mode toggle
 
 # Play pause prev next
-bindsym $mod+F9 exec --no-startup-id mpc prev
-bindsym $mod+F10 exec --no-startup-id mpc toggle
-bindsym $mod+F11 exec --no-startup-id mpc next
+bindsym $mod+F9 exec --no-startup-id mpc prev --host 127.0.0.1
+bindsym $mod+F10 exec --no-startup-id mpc toggle --host 127.0.0.1
+bindsym $mod+F11 exec --no-startup-id mpc next --host 127.0.0.1
 
 # Autostart
 
