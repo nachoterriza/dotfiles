@@ -32,7 +32,7 @@ font pango:Inconsolata 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -239,7 +239,7 @@ bindsym $alt+c exec --no-startup-id firejail chromium
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id smplayer --platformtheme qt5ct
 bindsym $alt+p exec --no-startup-id pcmanfm
-bindsym $alt+i exec --no-startup-id urxvt -e vim ~/.config/i3/config
+bindsym $alt+i exec --no-startup-id urxvtc -e vim ~/.config/i3/config
 bindsym $alt+h exec --no-startup-id /usr/share/playonlinux/playonlinux --run "Hearthstone" %F
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
@@ -252,6 +252,7 @@ bindsym $mod+F11 exec --no-startup-id mpc next --host 127.0.0.1
 
 # Autostart
 
+exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id compton --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id parcellite
 exec --no-startup-id nm-applet

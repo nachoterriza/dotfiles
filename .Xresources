@@ -9,13 +9,13 @@ urxvt*allow_bold:    true
 urxvt*letterSpace: -1
 
 Xft*dpi:                96
-Xft*antialias:          true
+Xft*antialias:          false
 Xft*hinting:            full
 
 URxvt*geometry: 85x30
 URxvt*fading:      30 
 URxvt*tintColor:     #ffffff
-URxvt*shading:      20 
+URxvt*shading:      15 
 URxvt*inheritPixmap:    true 
 
 URxvt*colorIT:   #85af5f
