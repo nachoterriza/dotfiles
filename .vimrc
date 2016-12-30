@@ -4,6 +4,16 @@ set nocompatible
 
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 
+function! CleverTab()
+	if strpart( getline('.'), 0, col('.')-1) =~ '^\s*$'
+		return "\<Tab>"
+	else
+		return "\<C-N>"
+	endif
+endfunction
+
+inoremap <Tab> <C-R>=CleverTab()<CR>
+
 se nu
 syntax on
 colorscheme dracula

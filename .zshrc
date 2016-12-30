@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias smplayer="smplayer --platformtheme qt5ct"
+alias vim="nvim"
 #alias jondo="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -jar /home/nacho/Documentos/cosas/instaladores/Jondo/JAP.jar"
 #alias gparted="pkexec gparted"
 #alias gparted="/home/nacho/scripts/gparted.sh"
