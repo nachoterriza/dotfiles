@@ -244,6 +244,8 @@ bindsym $alt+h exec --no-startup-id /usr/share/playonlinux/playonlinux --run "He
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $mod+b bar mode toggle
+bindsym $alt+y exec --no-startup-id mpv --fullscreen $(parcellite -c)
+bindsym $alt+t exec --no-startup-id mpc --host 127.0.0.1 add $(youtube-dl -g $(parcellite -c))
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev --host 127.0.0.1
