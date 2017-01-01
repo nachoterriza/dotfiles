@@ -234,8 +234,8 @@ for_window [class="GParted"] floating enable
 for_window [class="mpv"] floating enable
 
 # Programas
-bindsym $alt+f exec --no-startup-id firejail --seccomp firefox
-bindsym $alt+j exec --no-startup-id firejail --seccomp --private firefox -P JonDoFox 
+bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox
+bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
 bindsym $alt+c exec --no-startup-id firejail chromium
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id smplayer --platformtheme qt5ct
