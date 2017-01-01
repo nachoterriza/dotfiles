@@ -235,6 +235,7 @@ for_window [class="mpv"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp firefox
+bindsym $alt+j exec --no-startup-id firejail --seccomp --private firefox -P JonDoFox 
 bindsym $alt+c exec --no-startup-id firejail chromium
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id smplayer --platformtheme qt5ct
@@ -245,12 +246,12 @@ bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $mod+b bar mode toggle
 bindsym $alt+y exec --no-startup-id mpv --fullscreen $(parcellite -c)
-bindsym $alt+t exec --no-startup-id mpc --host 127.0.0.1 add $(youtube-dl -g $(parcellite -c))
+bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
 
 # Play pause prev next
-bindsym $mod+F9 exec --no-startup-id mpc prev --host 127.0.0.1
-bindsym $mod+F10 exec --no-startup-id mpc toggle --host 127.0.0.1
-bindsym $mod+F11 exec --no-startup-id mpc next --host 127.0.0.1
+bindsym $mod+F9 exec --no-startup-id mpc prev 
+bindsym $mod+F10 exec --no-startup-id mpc toggle
+bindsym $mod+F11 exec --no-startup-id mpc next
 
 # Autostart
 
@@ -260,7 +261,7 @@ exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
-exec --no-startup-id pidgin
+exec --no-startup-id firejail --seccomp pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id /home/nacho/scripts/checkBatt.sh
