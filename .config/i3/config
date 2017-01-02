@@ -238,14 +238,14 @@ bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox
 bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
 bindsym $alt+c exec --no-startup-id firejail chromium
 bindsym $alt+m exec --no-startup-id mousepad
-bindsym $alt+v exec --no-startup-id smplayer --platformtheme qt5ct
+bindsym $alt+v exec --no-startup-id firejail --seccomp smplayer --platformtheme qt5ct
 bindsym $alt+p exec --no-startup-id pcmanfm
 bindsym $alt+i exec --no-startup-id urxvtc -e vim ~/.config/i3/config
 bindsym $alt+h exec --no-startup-id /usr/share/playonlinux/playonlinux --run "Hearthstone" %F
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $mod+b bar mode toggle
-bindsym $alt+y exec --no-startup-id mpv --fullscreen $(parcellite -c)
+bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
 
 # Play pause prev next
@@ -264,4 +264,3 @@ exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail --seccomp pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
-exec --no-startup-id /home/nacho/scripts/checkBatt.sh

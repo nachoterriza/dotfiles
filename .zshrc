@@ -90,9 +90,6 @@ source $ZSH/oh-my-zsh.sh
 alias smplayer="smplayer --platformtheme qt5ct"
 alias vim="nvim"
 alias thunderbird="firejail --seccomp thunderbird"
-#alias jondo="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -jar /home/nacho/Documentos/cosas/instaladores/Jondo/JAP.jar"
-#alias gparted="pkexec gparted"
-#alias gparted="/home/nacho/scripts/gparted.sh"
 
 # Fix Inicio y Fin
 bindkey "[7~" beginning-of-line
