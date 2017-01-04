@@ -202,7 +202,7 @@ bar {
         status_command conky -c ~/.config/i3/conky
 	mode dock
 	position top
-	font pango: Monaco 9, FontAwesome 10
+	font pango: FontAwesome 10
 	strip_workspace_numbers yes
 colors {
 	background	#282828
@@ -218,6 +218,7 @@ colors {
 } 
 
 for_window [title="Thunderbird Preferences"] floating enable
+for_window [title="Preferences$"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [instance="Msgcompose"] floating enable
 for_window [instance="Wine"] floating enable
@@ -225,6 +226,8 @@ for_window [class="Wine"] floating enable
 for_window [class="vmware-modconfig"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
 for_window [class="transmission"] floating enable
 for_window [class="Pidgin"] move to scratchpad
 for_window [class="recordMyDesktop"] floating enable
@@ -264,3 +267,4 @@ exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail --seccomp pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
+exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py

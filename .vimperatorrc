@@ -8,5 +8,5 @@ map J gT
 map K gt
 
 javascript << EOS
-hints.addMode("P", "Open with mpv:", (elem, loc) => liberator.execute("silent !/usr/bin/mpv --fullscreen" + loc + " &", null, true));
+hints.addMode("P", "Open with mpv:", (elem, loc) => liberator.execute("silent !/usr/bin/mpv '" + loc + "' &", null, true));
 EOS
