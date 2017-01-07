@@ -9,6 +9,6 @@ if xrandr | grep "$externo disconnected"; then
 	/home/nacho/scripts/checkBatt.sh
 else
 	xrandr --output "$interno" --off --output "$extern" --auto
-	feh --bg-scale /home/nacho/Imágenes/Legend/'Blu-ray 3.jpg'
+	feh --bg-scale /home/nacho/Imágenes/MAC/sierra.jpg
 	pactl load-module module-bluez5-discover
 fi
