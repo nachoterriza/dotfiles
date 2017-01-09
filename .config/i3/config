@@ -264,7 +264,7 @@ exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
-exec --no-startup-id firejail --seccomp pidgin
+#exec --no-startup-id firejail --seccomp pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py
