@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TEMP="$(optirun nvidia-smi -q | grep "GPU Current Temp"|cut -c 38-40)"
+MEM="$(optirun nvidia-smi -q | grep Total| cut -c 38-50 | grep -v "N/A")"
+USED="$(optirun nvidia-smi -q | grep Used| cut -c 38-50 | grep -v "N/A")"
+FREE="$(optirun nvidia-smi -q | grep Free| cut -c 38-50 | grep -v "N/A")"
+zenity --info --title="NVIDIA settings" --text="Temp: $TEMP ºC\nMemory: $MEM \nUsed: $USED \nFree: $FREE"
