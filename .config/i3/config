@@ -238,6 +238,7 @@ for_window [class="mpv"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox
+bindsym $alt+u exec --no-startup-id firejail --seccomp firefox
 bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
 bindsym $alt+c exec --no-startup-id firejail chromium
 bindsym $alt+m exec --no-startup-id mousepad
@@ -250,11 +251,21 @@ bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $mod+b bar mode toggle
 bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
+bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev 
 bindsym $mod+F10 exec --no-startup-id mpc toggle
 bindsym $mod+F11 exec --no-startup-id mpc next
+
+# Brightness up and down
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+
+# Volume control
+bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 
 # Autostart
 
@@ -264,7 +275,6 @@ exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
-#exec --no-startup-id firejail --seccomp pidgin
 exec --no-startup-id firefox-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py
