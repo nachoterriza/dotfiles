@@ -217,6 +217,8 @@ colors {
 	}
 } 
 
+bindsym $mod+b bar mode toggle
+
 for_window [title="Thunderbird Preferences"] floating enable
 for_window [title="Preferences$"] floating enable
 for_window [class="Pavucontrol"] floating enable
@@ -246,8 +248,7 @@ bindsym $alt+p exec --no-startup-id pcmanfm
 bindsym $alt+i exec --no-startup-id urxvtc -e vim ~/.config/i3/config
 bindsym $alt+h exec --no-startup-id /usr/share/playonlinux/playonlinux --run "Hearthstone" %F
 bindsym $alt+s exec --no-startup-id subl3
-bindsym Print exec scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
-bindsym $mod+b bar mode toggle
+bindsym Print exec --no-startup-id scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
