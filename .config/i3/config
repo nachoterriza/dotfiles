@@ -229,6 +229,7 @@ for_window [class="vmware-modconfig"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [class="transmission"] floating enable
 for_window [class="Pidgin"] move to scratchpad
