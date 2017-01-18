@@ -242,7 +242,7 @@ for_window [class="mpv"] floating enable
 bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox
 bindsym $alt+u exec --no-startup-id firejail --seccomp firefox
 bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
-bindsym $alt+c exec --no-startup-id firejail chromium
+bindsym $alt+c exec --no-startup-id firejail chromium --incognito
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id firejail --seccomp smplayer --platformtheme qt5ct
 bindsym $alt+p exec --no-startup-id pcmanfm
