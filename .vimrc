@@ -22,6 +22,12 @@ set incsearch
 set smarttab
 set wildmenu
 set wildmode=list:longest,full
+
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set smarttab
+
 map <C-a> :NERDTreeTabsToggle<CR>
 nnoremap J :tabprevious<CR>
 nnoremap K :tabnext<CR>
