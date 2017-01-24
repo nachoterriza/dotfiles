@@ -11,6 +11,7 @@
 
 set $mod Mod4
 set $alt Mod1
+set $term termite
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -32,7 +33,7 @@ font pango:Inconsolata 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -246,7 +247,7 @@ bindsym $alt+c exec --no-startup-id firejail chromium --incognito
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id firejail --seccomp smplayer --platformtheme qt5ct
 bindsym $alt+p exec --no-startup-id pcmanfm
-bindsym $alt+i exec --no-startup-id urxvtc -e vim ~/.config/i3/config
+bindsym $alt+i exec --no-startup-id $term -e vim ~/.config/i3/config
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec --no-startup-id scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
@@ -269,7 +270,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%
 
 # Autostart
 
-exec --no-startup-id urxvtd -q -o -f
+#exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id compton --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
