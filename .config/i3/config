@@ -259,6 +259,10 @@ bindsym $mod+F9 exec --no-startup-id mpc prev
 bindsym $mod+F10 exec --no-startup-id mpc toggle
 bindsym $mod+F11 exec --no-startup-id mpc next
 
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioNext exec --no-startup-id mpc next
+
 # Brightness up and down
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
@@ -267,6 +271,11 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
+
+bindsym $mod+F6 exec --no-startup-id amixer sset Master toggle
+bindsym $mod+F8 exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
+
 
 # Autostart
 

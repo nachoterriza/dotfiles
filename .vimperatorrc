@@ -11,3 +11,6 @@ map <C-c> <S-y>
 javascript << EOS
 hints.addMode("P", "Open with mpv:", (elem, loc) => liberator.execute("silent !/usr/bin/mpv '" + loc + "' &", null, true));
 EOS
+
+nmap d <C-w>
+nmap t <C-t>:open<SPACE>
