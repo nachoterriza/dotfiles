@@ -254,6 +254,7 @@ bindsym Print exec --no-startup-id scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M
 bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
+bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev 
