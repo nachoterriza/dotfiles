@@ -89,8 +89,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias smplayer="smplayer --platformtheme qt5ct"
 alias vim="nvim"
-alias thunderbird="firejail --seccomp thunderbird"
-alias ftransmission="firejail --seccomp transmission-qt"
 
 # Fix Inicio y Fin
 bindkey "[7~" beginning-of-line
