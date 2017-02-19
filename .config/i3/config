@@ -239,6 +239,7 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="JAP"] floating enable
 for_window [class="GParted"] floating enable
 for_window [class="mpv"] floating enable
+for_window [class="Nvidia-settings"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox -P default
@@ -292,4 +293,5 @@ exec --no-startup-id firejail feh --randomize --bg-scale /home/nacho/Imágenes/w
 exec --no-startup-id firefox-sync
 exec --no-startup-id firefox-esr-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
+exec --no-startup-id nvdock
 exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py

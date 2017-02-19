@@ -1,0 +1,16 @@
+
+background no
+out_to_x no
+out_to_console yes
+update_interval 2.0
+total_run_times 0
+use_spacer none
+
+TEXT
+
+${if_mpd_playing}  ${mpd_smart} ${endif}   \
+  ${downspeedf eno1}|${upspeedf eno1}   \
+  ${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}   \
+  ${battery_percent}%   \
+  ${time %a %d %b}   \
+  ${time %H:%M} 
