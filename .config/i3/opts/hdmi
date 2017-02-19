@@ -9,11 +9,11 @@ use_spacer none
 TEXT
 
 ${if_mpd_playing}  ${mpd_smart} ${endif}    \
+  ${downspeed eno1}|  ${upspeed eno1}  \
   ${mem} / ${memmax}    \
   ${cpu cpu1} · ${cpu cpu2} · ${cpu cpu3} · ${cpu cpu4} %    \
-  ${freq_g}    \
+  ${freq_g}GHz    \
   ${exec cat /sys/class/thermal/thermal_zone0/temp| cut -c 1-2} · ${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2} º    \
-  ${downspeed eno1}|  ${upspeed eno1}  \
   ${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}    \
   ${battery_percent}%    \
   ${time %a %d %b}    \
