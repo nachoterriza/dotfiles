@@ -206,7 +206,8 @@ bar {
 	font pango: FontAwesome 10
 	strip_workspace_numbers yes
 colors {
-	background	#282828
+	background	#050505
+	#background	#282828
 	statusline	#c0c5ce
 	separator	#000000
 
@@ -287,6 +288,7 @@ exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
+exec --no-startup-id firejail feh --randomize --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/
 exec --no-startup-id firefox-sync
 exec --no-startup-id firefox-esr-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
