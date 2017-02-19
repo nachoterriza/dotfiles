@@ -11,6 +11,6 @@ TEXT
 ${if_mpd_playing}  ${mpd_smart} ${endif}   \
   ${downspeedf eno1}|${upspeedf eno1}   \
   ${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}   \
-  ${battery_percent}%   \
+  ${battery_percent}% ${battery_time}   \
   ${time %a %d %b}   \
   ${time %H:%M} 
