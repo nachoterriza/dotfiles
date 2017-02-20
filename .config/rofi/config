@@ -3,25 +3,25 @@ rofi.modi:                           run,ssh
 ! "Window width" Set from: Default
 rofi.width:                          100
 ! "Number of lines" Set from: Default
-rofi.lines:                         6
+rofi.lines:                         3
 ! "Number of columns" Set from: Default
 ! rofi.columns:                        1
 ! "Font to use" Set from: Default
 rofi.font:                           monaco 20
 ! "Color scheme for normal row" Set from: Default
-rofi.color-normal:                   #181818,#9900cc,#181818,#232323,#9900cc
+rofi.color-normal:                   #00181818,#9900cc,#00181818,#00181818,#bc23ef
 ! "Color scheme for urgent row" Set from: Default
 ! rofi.color-urgent:                   #fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
 ! "Color scheme for active row" Set from: Default
 ! rofi.color-active:                   #fdf6e3,#268bd2,#eee8d5,#268bd2,#fdf6e3
 ! "Color scheme window" Set from: Default
-rofi.color-window:                   #181818,#181818
+rofi.color-window:                   #cc181818,#181818
 ! "Border width" Set from: Default
 ! rofi.bw:                             1
 ! "Location on screen" Set from: Default
-! rofi.location:                       0
+!rofi.location:                       0
 ! "Padding" Set from: Default
-rofi.padding:                        340
+rofi.padding:                       800 
 ! "Y-offset relative to location" Set from: Default
 ! rofi.yoffset:                        0
 ! "X-offset relative to location" Set from: Default
@@ -81,7 +81,7 @@ rofi.eh:                             3
 ! "Fullscreen" Set from: Default
 ! rofi.fullscreen:                     false
 ! "Fake transparency" Set from: Default
-! rofi.fake-transparency:              false
+!rofi.fake-transparency:              true
 ! "DPI" Set from: Default
 ! rofi.dpi:                            -1
 ! "Threads to use for string matching" Set from: Default

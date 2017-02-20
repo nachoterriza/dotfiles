@@ -284,7 +284,7 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 # Autostart
 
 #exec --no-startup-id urxvtd -q -o -f
-exec --no-startup-id compton --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
+exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id parcellite
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
