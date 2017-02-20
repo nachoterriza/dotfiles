@@ -77,7 +77,7 @@ rofi.eh:                             3
 ! "Separator style (none, dash, solid)" Set from: Default
 ! rofi.separator-style:                dash
 ! "Hide scroll-bar" Set from: Default
-! rofi.hide-scrollbar:                 false
+rofi.hide-scrollbar:                 true
 ! "Fullscreen" Set from: Default
 ! rofi.fullscreen:                     false
 ! "Fake transparency" Set from: Default
