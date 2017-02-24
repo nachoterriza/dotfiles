@@ -295,7 +295,7 @@ exec --no-startup-id parcellite
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
-exec --no-startup-id firejail feh --randomize --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/
+exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/zombiepolo.jpg
 exec --no-startup-id firefox-sync
 exec --no-startup-id firefox-esr-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000

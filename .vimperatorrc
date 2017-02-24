@@ -1,13 +1,14 @@
-set hintchars=qwertyuiopasdfghjklñzxcvbnm
-set gui=none,tabs
-set noscrollbars
-set nohlsearch
-set incsearch
-
 map J gT
 map K gt
-map <C-c> <S-y>
+map <C-c> Y
+set defsearch=searx
+set hintchars=qwertyuiopasdfghjklñzxcvbnm
+set nohlsearch
+set noscrollbars
+colorscheme indigo-fx3
 
 javascript << EOS
 hints.addMode("P", "Open with mpv:", (elem, loc) => liberator.execute("silent !/usr/bin/mpv '" + loc + "' &", null, true));
 EOS
+
+" vim: set ft=vimperator:
