@@ -58,7 +58,7 @@ ZSH_THEME="nuevotema"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
+unsetopt AUTO_CD
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
