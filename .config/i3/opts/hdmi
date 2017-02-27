@@ -9,7 +9,7 @@ use_spacer none
 TEXT
 
 ${if_mpd_playing}  ${mpd_smart} ${endif}    \
-  ${downspeed eno1} ${upspeed eno1}  \
+   ${downspeed eno1}   ${upspeed eno1}  \
   ${mem} / ${memmax}    \
   ${cpu cpu1} · ${cpu cpu2} · ${cpu cpu3} · ${cpu cpu4} %    \
   ${freq_g}GHz    \
