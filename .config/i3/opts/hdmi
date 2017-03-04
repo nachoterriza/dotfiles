@@ -19,13 +19,18 @@ TEXT
  { "full_text" : "${upspeed eno1}  " , "color" : "\#5ACFF0" },
  { "full_text" : "" , "color" : "\#B923A9" },
  { "full_text" : "${mem} / ${memmax}  " , "color" : 
-  ${if_match ${memperc}<90}"\#5ACFF0"${else}"\#FF0000"${endif} },
+  ${if_match ${memperc}<90}"\#5ACFF0"${else}"\#FF4500"${endif} },
  { "full_text" : "" , "color" : "\#B923A9" },
  { "full_text" : "${cpu cpu1} · ${cpu cpu2} · ${cpu cpu3} · ${cpu cpu4} %  " , "color" : "\#5ACFF0" },
  { "full_text" : "" , "color" : "\#B923A9" },
  { "full_text" : "${exec cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor}: ${freq_g}GHz  " , "color" : "\#5ACFF0" },
  { "full_text" : "" , "color" : "\#B923A9" },
- { "full_text" : "${exec cat /sys/class/thermal/thermal_zone0/temp| cut -c 1-2} · ${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2} º  " , "color" : "\#5ACFF0" },
+ { "full_text" : "${exec cat /sys/class/thermal/thermal_zone0/temp| cut -c 1-2} " , "color" : 
+  ${if_match ${exec cat /sys/class/thermal/thermal_zone0/temp| cut -c 1-2} < 75}"\#5ACFF0"${else}"\#FF4500"${endif} },
+ { "full_text" : "· " , "color" : "\#5ACFF0" },
+ { "full_text" : "${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2} " , "color" :
+  ${if_match ${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2} < 75}"\#5ACFF0"${else}"\#FF4500"${endif} },
+  { "full_text" : "º  " , "color" : "\#5ACFF0" },
  { "full_text" : "" , "color" : "\#B923A9" },
  { "full_text" : "${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}  " , "color" : "\#5ACFF0" },
  { "full_text" : "" , "color" : "\#B923A9" },

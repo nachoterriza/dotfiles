@@ -191,9 +191,9 @@ bindsym $mod+Shift+p mode "$mode_system"
 
 # COLORES
 
-client.focused		#1b7ef6	#1b7ef6	#282828	#1b7ef6
-client.focused_inactive	#1b7ef6	#282828	#dcdcdc #282828
-client.unfocused	#1b7ef6	#282828	#dcdcdc	#282828
+client.focused		#5acff0	#5acff0	#282828	#5acff0
+client.focused_inactive	#5acff0	#282828	#dcdcdc #282828
+client.unfocused	#5acff0	#282828	#dcdcdc	#282828
 client.urgent		#cc241d	#cc241d	#dcdcdc	#cc241d
 client.placeholder	#2d2d2d	#2d2d2d	#dcdcdc	#2d2d2d	
 
@@ -208,14 +208,14 @@ bar {
 colors {
 	background	#050505
 	#statusline	#c0c5ce
-	statusline	#1b7ef6
+	statusline	#5acff0
 	separator	#000000
 
-	focused_workspace	#1b7ef6	#1b7ef6	#000000
-	active_workspace	#000000	#000000	#1b7ef6
-	inactive_workspace	#000000	#000000	#1b7ef6
+	focused_workspace	#5acff0	#5acff0	#000000
+	active_workspace	#000000	#000000	#5acff0
+	inactive_workspace	#000000	#000000	#5acff0
 	urgent_workspace	#000000	#cc241d	#dddddd
-	binding_mode		#000000	#1b7ef6	#000000
+	binding_mode		#000000	#5acff0	#000000
 
 #	focused_workspace	#000000	#d5c4a1	#2b303b
 #	active_workspace	#000000	#000000	#c0c5ce
