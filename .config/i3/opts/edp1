@@ -1,16 +1,33 @@
-
+    
 background no
 out_to_x no
+own_window no
 out_to_console yes
 update_interval 2.0
 total_run_times 0
-use_spacer none
+cpu_avg_samples 4
+use_spacer left
 
 TEXT
-
-${if_mpd_playing}  ${mpd_smart} ${endif}   \
-  ${downspeed wlp8s0} ${upspeed wlp8s0}   \
-  ${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}   \
-  ${battery_percent}% ${battery_time}   \
-  ${time %a %d %b}   \
-  ${time %H:%M} 
+# JSON for i3bar
+[
+ { "full_text" : "${if_mpd_playing}${endif}" , "color" : "\#B923A9" },
+ { "full_text" : "${if_mpd_playing}${mpd_smart}  ${endif}" , "color" : "\#5ACFF0" },
+ { "full_text" : "  " , "color" : "\#B923A9" },
+ { "full_text" : "${downspeed wlp820} " , "color" : "\#5ACFF0" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${upspeed wlp820}  " , "color" : "\#5ACFF0" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${mem} / ${memmax}  " , "color" : 
+  ${if_match ${memperc}<90}"\#5ACFF0"${else}"\#FF0000"${endif} },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${exec cat /sys/class/thermal/thermal_zone0/temp| cut -c 1-2} · ${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2} º  " , "color" : "\#5ACFF0" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}  " , "color" : "\#5ACFF0" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${battery_percent}%  " , "color" : "\#5ACFF0" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${time %a %d %b}  " , "color" : "\#5ACFF0" },
+ { "full_text" : "" , "color" : "\#B923A9" },
+ { "full_text" : "${time %H:%M}  " , "color" : "\#5ACFF0" }],
