@@ -205,9 +205,9 @@ bar {
 	position top
 	font pango: FontAwesome 10
 	strip_workspace_numbers yes
+
 colors {
 	background	#050505
-	#statusline	#c0c5ce
 	statusline	#5acff0
 	separator	#b1e076
 
@@ -217,11 +217,6 @@ colors {
 	urgent_workspace	#000000	#cc241d	#dddddd
 	binding_mode		#000000	#5acff0	#000000
 
-#	focused_workspace	#000000	#d5c4a1	#2b303b
-#	active_workspace	#000000	#000000	#c0c5ce
-#	inactive_workspace	#000000	#000000	#c0c5ce
-#	urgent_workspace	#000000	#cc241d	#dddddd
-#	binding_mode		#000000	#d5c4a1	#2b303b
 	}
 } 
 
