@@ -209,7 +209,7 @@ colors {
 	background	#050505
 	#statusline	#c0c5ce
 	statusline	#5acff0
-	separator	#000000
+	separator	#b1e076
 
 	focused_workspace	#5acff0	#5acff0	#000000
 	active_workspace	#000000	#000000	#5acff0
