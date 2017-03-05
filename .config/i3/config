@@ -243,8 +243,7 @@ for_window [class="mpv"] floating enable
 for_window [class="Nvidia-settings"] floating enable
 
 # Programas
-bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox -P default
-bindsym $alt+u exec --no-startup-id firejail --seccomp firefox -P default
+bindsym $alt+f exec --no-startup-id firejail --seccomp firefox -P default
 bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
 bindsym $alt+e exec --no-startup-id firejail --seccomp firefox-esr -P esrdef
 bindsym $alt+c exec --no-startup-id firejail chromium --incognito
