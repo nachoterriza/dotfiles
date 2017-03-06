@@ -243,9 +243,9 @@ for_window [class="mpv"] floating enable
 for_window [class="Nvidia-settings"] floating enable
 
 # Programas
-bindsym $alt+f exec --no-startup-id firejail --seccomp firefox -P default
+bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox -P default
 bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
-bindsym $alt+e exec --no-startup-id firejail --seccomp firefox-esr -P esrdef
+#bindsym $alt+e exec --no-startup-id firejail --seccomp firefox-esr -P esrdef
 bindsym $alt+c exec --no-startup-id firejail chromium --incognito
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id firejail --seccomp smplayer --platformtheme qt5ct
@@ -294,4 +294,4 @@ exec --no-startup-id firefox-sync
 #exec --no-startup-id firefox-esr-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id nvdock
-exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py
+#exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py

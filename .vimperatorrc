@@ -1,7 +1,6 @@
 map J gT
 map K gt
 map <C-c> Y
-set defsearch=searx
 set hintchars=qwertyuiopasdfghjklñzxcvbnm
 set nohlsearch
 set noscrollbars
