@@ -8,6 +8,7 @@ update_interval 2.0
 total_run_times 0
 cpu_avg_samples 4
 use_spacer left
+mpd_host 127.0.0.1
 
 TEXT
 # JSON for i3bar
