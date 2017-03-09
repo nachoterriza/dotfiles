@@ -257,6 +257,7 @@ bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
+bindsym $alt+w exec --no-startup-id termite -e "tmux attach -t weechat"
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc --host=127.0.0.1 prev 
@@ -272,7 +273,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # Volume control
-bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 
@@ -294,4 +295,5 @@ exec --no-startup-id firefox-sync
 #exec --no-startup-id firefox-esr-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id nvdock
+exec --no-startup-id tmux new-session -s weechat -c firejail weechat
 #exec --no-startup-id python2 /usr/lib/python2.7/site-packages/searx/webapp.py

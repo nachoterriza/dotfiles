@@ -33,7 +33,7 @@ TEXT
  { "full_text" : "${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2}" , "color" :
   ${if_match ${exec cat /sys/class/thermal/thermal_zone1/temp| cut -c 1-2} < 75}"\#5ACFF0"${else}"\#FF4500"${endif} , "separator" : false },
  { "full_text" : "º  " , "color" : "\#5ACFF0" },
- { "full_text" : "  " , "color" : "\#B923A9" , "separator" : false },
+ { "full_text" : ${if_pa_sink_muted}"  "${else}"  "${endif} , "color" : "\#B923A9" , "separator" : false },
  { "full_text" : "${exec amixer get Master | grep -oE "[[:digit:]]*%" | sed -n 1p}  " , "color" : "\#5ACFF0" },
  { "full_text" : "  " , "color" : "\#B923A9" , "separator" : false },
  { "full_text" : "${battery_percent}%  " , "color" : "\#5ACFF0" },
