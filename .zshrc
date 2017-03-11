@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/scripts:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/scripts:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/nacho/.oh-my-zsh
