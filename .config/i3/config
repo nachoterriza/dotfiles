@@ -292,7 +292,6 @@ exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/zombiepolo.jpg
 exec --no-startup-id firefox-sync
-#exec --no-startup-id firefox-esr-sync
 exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id nvdock
 #exec --no-startup-id tmux new-session -s weechat -c firejail weechat
