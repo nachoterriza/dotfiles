@@ -1,6 +1,7 @@
 map J gT
 map K gt
 map <C-c> Y
+map <C-t> :tabopen 127.0.0.1:8888 <CR>
 set hintchars=qwertyuiopasdfghjklñzxcvbnm
 set nohlsearch
 set noscrollbars
