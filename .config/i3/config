@@ -256,7 +256,7 @@ bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(parcellite -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(parcellite -c))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
-bindsym $alt+w exec --no-startup-id termite -e "tmux attach -t weechat"
+bindsym $alt+w exec --no-startup-id $term -e "tmux attach -t weechat"
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev 

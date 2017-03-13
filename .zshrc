@@ -89,7 +89,6 @@ unsetopt AUTO_CD
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias smplayer="smplayer --platformtheme qt5ct"
 alias vim="nvim"
-alias gitkraken="LD_PRELOAD=/usr/lib/libcurl.so.3 gitkraken"
 alias optirun="vblank_mode=0 optirun"
 
 # Fix Inicio y Fin
