@@ -259,9 +259,10 @@ bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/d
 bindsym $alt+w exec --no-startup-id termite -e "tmux attach -t weechat"
 
 # Play pause prev next
-bindsym $mod+F9 exec --no-startup-id mpc --host=127.0.0.1 prev 
-bindsym $mod+F10 exec --no-startup-id mpc --host=127.0.0.1 toggle
-bindsym $mod+F11 exec --no-startup-id mpc --host=127.0.0.1 next
+bindsym $mod+F9 exec --no-startup-id mpc prev 
+bindsym $mod+F10 exec --no-startup-id mpc toggle
+bindsym $mod+F11 exec --no-startup-id mpc next
+bindsym $mod+F12 exec --no-startup-id mpc stop
 
 bindsym XF86AudioPrev exec --no-startup-id mpc prev
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
