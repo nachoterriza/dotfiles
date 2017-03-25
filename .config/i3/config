@@ -272,8 +272,11 @@ bindsym Print exec --no-startup-id scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M
 bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(clipit -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(clipit -c))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
+bindsym $mod+F3 exec --no-startup-id networkmanager_dmenu
+bindsym $mod+Shift+F1 exec --no-startup-id scripts/dse
 bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
 bindsym $alt+w exec --no-startup-id $term -e "tmux attach -t weechat"
+bindsym $alt+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev 
@@ -301,7 +304,8 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 
 # Autostart
 exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
+exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
