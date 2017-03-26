@@ -306,6 +306,7 @@ for_window [class="JAP"] floating enable
 for_window [class="GParted"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="Nvidia-settings"] floating enable
+for_window [class="Steam"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox -P default
@@ -321,7 +322,6 @@ bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(clipit -c)
 bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(clipit -c))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $mod+F3 exec --no-startup-id networkmanager_dmenu
-bindsym $mod+Shift+F1 exec --no-startup-id scripts/dse
 bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
 bindsym $alt+w exec --no-startup-id $term -e "tmux attach -t weechat"
 bindsym $alt+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
@@ -359,5 +359,5 @@ exec --no-startup-id dunst
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/zombiepolo.jpg
 exec --no-startup-id firefox-sync
-exec --no-startup-id xflux -l 40 -g 4 -k 5000
+#exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id nvdock
