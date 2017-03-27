@@ -308,6 +308,8 @@ for_window [class="mpv"] floating enable
 for_window [class="Nvidia-settings"] floating enable
 for_window [class="Steam"] floating enable
 
+for_window [class="Firefox"] border pixel 0
+
 # Programas
 bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox -P default
 bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
