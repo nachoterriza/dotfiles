@@ -16,9 +16,9 @@ TEXT
  { "full_text" : "${if_mpd_playing}${endif}" , "color" : "\#B923A9" , "separator" : false },
  { "full_text" : "${if_mpd_playing}${mpd_smart}  ${endif}" , "color" : "\#5ACFF0" },
  { "full_text" : "    " , "color" : "\#B923A9" , "separator" : false },
- { "full_text" : "${downspeed wlp820} " , "color" : "\#5ACFF0" , "separator" : false },
+ { "full_text" : "${downspeed wlp8s0} " , "color" : "\#5ACFF0" , "separator" : false },
  { "full_text" : "  " , "color" : "\#B923A9" , "separator" : false },
- { "full_text" : "${upspeed wlp820}  " , "color" : "\#5ACFF0" },
+ { "full_text" : "${upspeed wlp8s0}  " , "color" : "\#5ACFF0" },
  { "full_text" : "  " , "color" : "\#B923A9" , "separator" : false },
  { "full_text" : "${mem} / ${memmax}  " , "color" : 
   ${if_match ${memperc}<90}"\#5ACFF0"${else}"\#FF0000"${endif} },
