@@ -3,7 +3,8 @@ export PATH=$HOME/scripts:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/nacho/.oh-my-zsh
-export VISUAL="vim"
+export VISUAL="nvim"
+export EDITOR="nvim"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
 export GTK_THEME=Arc:darker
