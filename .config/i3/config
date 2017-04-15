@@ -359,7 +359,7 @@ exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend gl
 #exec --no-startup-id clipit
 exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
-exec --no-startup-id dunst
+exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/zombiepolo.jpg
 exec --no-startup-id firefox-sync
