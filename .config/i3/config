@@ -12,7 +12,7 @@
 set $mod Mod4
 set $alt Mod1
 set $term termite
-#set $term urxvt
+#set $term urxvtc
 
 set $color1 #5acff0
 set $color2 #282828
