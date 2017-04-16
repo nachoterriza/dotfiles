@@ -1,7 +1,7 @@
 urxvt*font: xft:Inconsolata:pixelsize=14
 urxvt*termName:         xterm-256color
-urxvt*background:       #060606
-urxvt*foreground:       #d7d0c7
+!urxvt*background:       #060606
+!urxvt*foreground:       #d7d0c7
 urxvt*scrollBar:        false
 urxvt*matcher.button:   1
 urxvt.transparent:    true
