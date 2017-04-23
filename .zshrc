@@ -98,5 +98,9 @@ bindkey "[8~" end-of-line
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+pb () {
+    curl -F "c=@${1:--}" https://ptpb.pw/
+}
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
