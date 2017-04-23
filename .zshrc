@@ -117,5 +117,9 @@ pb () {
     curl -F "c=@${1:--}" https://ptpb.pw/
 }
 
+random_string () {
+    cat /dev/urandom | tr -cd 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
+}
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
