@@ -80,6 +80,21 @@ unsetopt AUTO_CD
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+### For gpg-agent ###
+
+# Start the gpg-agent if not already running
+#if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
+#  gpg-connect-agent /bye >/dev/null 2>&1
+#fi
+
+# Set GPG TTY
+#export GPG_TTY=$(tty)
+
+# Refresh gpg-agent tty in case user switches into an X session
+#gpg-connect-agent updatestartuptty /bye >/dev/null
+
+#####################
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
