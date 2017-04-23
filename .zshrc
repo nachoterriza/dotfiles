@@ -113,10 +113,12 @@ bindkey "[8~" end-of-line
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Pastebin client https://ptpb.pw
 pb () {
     curl -F "c=@${1:--}" https://ptpb.pw/
 }
 
+# Generate random string from /dev/urandom: size is parameter
 random_string () {
     cat /dev/urandom | tr -cd 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
 }
