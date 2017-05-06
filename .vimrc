@@ -49,7 +49,7 @@ set shiftwidth=4
 set tabstop=4
 set smarttab
 
-map <C-a> :NERDTreeTabsToggle<CR>
+map <C-ñ> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
 nnoremap J :tabprevious<CR>
 nnoremap K :tabnext<CR>
