@@ -49,7 +49,12 @@ set shiftwidth=4
 set tabstop=4
 set smarttab
 
-map <C-ñ> :NERDTreeTabsToggle<CR>
+" tell vim to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=/home/nacho/.vimundo
+
+map <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
 nnoremap J :tabprevious<CR>
 nnoremap K :tabnext<CR>
