@@ -80,21 +80,6 @@ unsetopt AUTO_CD
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-### For gpg-agent ###
-
-# Start the gpg-agent if not already running
-#if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
-#  gpg-connect-agent /bye >/dev/null 2>&1
-#fi
-
-# Set GPG TTY
-#export GPG_TTY=$(tty)
-
-# Refresh gpg-agent tty in case user switches into an X session
-#gpg-connect-agent updatestartuptty /bye >/dev/null
-
-#####################
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -122,6 +107,23 @@ pb () {
 random_string () {
     cat /dev/urandom | tr -cd 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
 }
+
+# Start the gpg-agent if not already running
+if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
+  gpg-connect-agent /bye >/dev/null 2>&1
+fi
+
+# Set SSH to use gpg-agent
+#unset SSH_AGENT_PID
+#if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+#  export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+#fi
+
+GPG_TTY=$(tty)
+export GPG_TTY
+
+# Refresh gpg-agent tty in case user switches into an X session
+gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
