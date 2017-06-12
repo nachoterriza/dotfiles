@@ -58,5 +58,8 @@ map <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
 nnoremap J :tabprevious<CR>
 nnoremap K :tabnext<CR>
-nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <C-t> :tabnew<CR>
+
+autocmd Filetype c nnoremap <buffer> <F5>:w<CR> :!clear; make<CR> :!./%<<CR>
+autocmd Filetype python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
+autocmd Filetype java nnoremap <buffer> <F5>:update<Bar>execute '!javac '.shellescape(@%, 1)<CR>
