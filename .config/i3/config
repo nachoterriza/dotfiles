@@ -315,17 +315,17 @@ for_window [class="Firefox"] border pixel 0
 for_window [class="Zathura"] border pixel 0
 
 # Programas
-bindsym $alt+f exec --no-startup-id firejail --seccomp --dns=127.0.0.1 firefox -P default
-bindsym $alt+j exec --no-startup-id firejail --seccomp firefox -P JonDoFox 
-bindsym $alt+o exec --no-startup-id firejail --dns=127.0.0.1 opera --private
+bindsym $alt+f exec --no-startup-id firefox
+bindsym $alt+j exec --no-startup-id jondofox
+bindsym $alt+o exec --no-startup-id opera
 bindsym $alt+m exec --no-startup-id mousepad
-bindsym $alt+v exec --no-startup-id firejail --seccomp smplayer --platformtheme qt5ct
+bindsym $alt+v exec --no-startup-id smplayer
 bindsym $alt+p exec --no-startup-id pcmanfm
 bindsym $alt+i exec --no-startup-id $term -e "vim /home/nacho/.config/i3/config"
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec --no-startup-id scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
-bindsym $alt+y exec --no-startup-id firejail --seccomp smplayer $(clipit -c)
-bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(clipit -c))
+bindsym $alt+y exec --no-startup-id smplayer $(xsel -o)
+bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(xsel -o))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $mod+F3 exec --no-startup-id networkmanager_dmenu
 bindsym $mod+F4 exec --no-startup-id interrobang 
