@@ -24,6 +24,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 call plug#end()
 
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+let g:EclimCompletionMethod = 'omnifunc'
 
 "function! CleverTab()
 "	if strpart( getline('.'), 0, col('.')-1) =~ '^\s*$'
