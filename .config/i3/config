@@ -301,7 +301,6 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [class="transmission"] floating enable
-#for_window [class="Pidgin"] move to scratchpad
 for_window [class="Lxappearance"] floating enable
 for_window [class="JAP"] floating enable
 for_window [class="GParted"] floating enable
@@ -360,12 +359,10 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 
 # Autostart
 exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
-#exec --no-startup-id clipit
 exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/zombiepolo.jpg
 exec --no-startup-id firefox-sync
-#exec --no-startup-id xflux -l 40 -g 4 -k 5000
 exec --no-startup-id nvdock

@@ -88,8 +88,6 @@ unsetopt AUTO_CD
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias smplayer="smplayer --platformtheme qt5ct"
-alias vim="nvim"
 alias optirun="vblank_mode=0 optirun"
 
 # Fix Inicio y Fin
