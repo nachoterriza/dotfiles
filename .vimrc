@@ -44,16 +44,32 @@ set incsearch
 set smartcase 
 set wildmenu
 set wildmode=list:longest,full
+set modelines=0
+set encoding=utf-8
+set scrolloff=3
+set hidden
+set relativenumber
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
 
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set smarttab
 
 " tell vim to use an undo file
 set undofile
 " set a directory to store the undo history
 set undodir=/home/nacho/.vimundo
+
+set history=1000
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.class,*.o
+set title
 
 map <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
