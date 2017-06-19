@@ -3,7 +3,7 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'dracula/vim'
+"Plug 'dracula/vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bling/vim-airline'
@@ -38,7 +38,8 @@ let g:EclimCompletionMethod = 'omnifunc'
 
 se nu
 syntax on
-colorscheme dracula
+"colorscheme dracula
+colorscheme lucario
 set nohlsearch
 set incsearch
 set smartcase 
@@ -48,12 +49,12 @@ set modelines=0
 set encoding=utf-8
 set scrolloff=3
 set hidden
-set relativenumber
+"set relativenumber
 
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set colorcolumn=85
+"set wrap
+"set textwidth=79
+"set formatoptions=qrn1
+"set colorcolumn=85
 
 set expandtab
 set shiftwidth=4

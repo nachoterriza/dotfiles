@@ -22,8 +22,8 @@ set $color5 #cc241d
 set $color6 #dddddd
 set $color7 #00000
 
-set $default_gaps_inner 6
-set $default_gaps_outer 2
+set $default_gaps_inner 8
+set $default_gaps_outer 4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -46,7 +46,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term --config=$HOME/.config/termite/bluebg
+bindsym $mod+Shift+Return exec $term --config=$HOME/.config/termite/original
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -179,12 +179,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 smart_gaps on
-smart_borders on
+#smart_borders on
 
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
-new_window pixel
+new_window none
+#new_window pixel
 hide_edge_borders vertical
 
 set $Locker i3lock -uti ~/Imágenes/lock.png && sleep 1
@@ -309,9 +310,9 @@ for_window [class="Nvidia-settings"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="feh"] floating enable
 
-for_window [class="Kdesudo"] border pixel 0
-for_window [class="Firefox"] border pixel 0
-for_window [class="Zathura"] border pixel 0
+#for_window [class="Kdesudo"] border pixel 0
+#for_window [class="Firefox"] border pixel 0
+#for_window [class="Zathura"] border pixel 0
 
 # Programas
 bindsym $alt+f exec --no-startup-id firefox
@@ -358,7 +359,8 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 
 
 # Autostart
-exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
+#exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
+exec --no-startup-id compton
 exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
