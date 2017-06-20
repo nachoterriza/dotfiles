@@ -184,6 +184,7 @@ gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
 new_window none
+new_float none
 hide_edge_borders vertical
 
 set $Locker i3lock -uti ~/Imágenes/lock.png && sleep 1

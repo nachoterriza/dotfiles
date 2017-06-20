@@ -3,7 +3,7 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
-"Plug 'dracula/vim'
+Plug 'dracula/vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bling/vim-airline'
@@ -39,7 +39,9 @@ let g:EclimCompletionMethod = 'omnifunc'
 se nu
 syntax on
 "colorscheme dracula
-colorscheme lucario
+"colorscheme lucario
+colorscheme solarized
+set background=dark
 set nohlsearch
 set incsearch
 set smartcase 
