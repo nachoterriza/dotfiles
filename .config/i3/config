@@ -22,8 +22,8 @@ set $color5 #cc241d
 set $color6 #dddddd
 set $color7 #000000
 
-set $default_gaps_inner 8
-set $default_gaps_outer 4
+set $default_gaps_inner 12
+set $default_gaps_outer 6
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -353,13 +353,11 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 
 
 # Autostart
-#exec --no-startup-id compton -f --vsync opengl-swc --glx-no-stencil --backend glx --paint-on-overlay --shadow-exclude '!focused'
 exec --no-startup-id compton
 exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
-#exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/FINAL/zombiepolo.jpg
 exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/beach_sunrise_horizon-1920x1080.jpg
 exec --no-startup-id firefox-sync
 exec --no-startup-id nvdock
