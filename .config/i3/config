@@ -271,7 +271,7 @@ bar {
 	font pango: FontAwesome 10
 	strip_workspace_numbers yes
   colors {
-    separator #268bd2
+    separator #dc322f
     background #002b36
     statusline #268bd2
     focused_workspace #fdf6e3 #859900 #fdf6e3
