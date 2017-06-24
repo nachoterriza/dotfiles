@@ -107,6 +107,11 @@ random_string () {
     cat /dev/urandom | tr -cd 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
 }
 
+# Generate random string including special characters (for passwords)
+random_passwd () {
+        cat /dev/urandom | tr -cd 'a-zA-Z0-9 !"#$%&()*+,-./:;<=>?@[\]^_`{|}~' | fold -w ${1:-32} | head -n 1 
+}
+
 # Start the gpg-agent if not already running
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
   gpg-connect-agent /bye >/dev/null 2>&1
