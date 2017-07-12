@@ -11,7 +11,8 @@
 
 set $mod Mod4
 set $alt Mod1
-set $term termite
+set $term st
+#set $term termite
 #set $term urxvtc
 
 set $color1 #5acff0
