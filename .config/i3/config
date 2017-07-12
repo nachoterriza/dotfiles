@@ -12,16 +12,14 @@
 set $mod Mod4
 set $alt Mod1
 set $term st
-#set $term termite
-#set $term urxvtc
 
-set $color1 #5acff0
-set $color2 #282828
-set $color3 #dcdcdc
-set $color4 #2d2d2d
-set $color5 #cc241d
-set $color6 #dddddd
-set $color7 #000000
+#set $color1 #5acff0
+#set $color2 #282828
+#set $color3 #dcdcdc
+#set $color4 #2d2d2d
+#set $color5 #cc241d
+#set $color6 #dddddd
+#set $color7 #000000
 
 set $default_gaps_inner 12
 set $default_gaps_outer 6
@@ -316,7 +314,7 @@ bindsym $alt+o exec --no-startup-id opera
 bindsym $alt+m exec --no-startup-id mousepad
 bindsym $alt+v exec --no-startup-id smplayer
 bindsym $alt+p exec --no-startup-id pcmanfm
-bindsym $alt+i exec --no-startup-id $term -e "vim /home/nacho/.config/i3/config"
+bindsym $alt+i exec --no-startup-id $term -e vim /home/nacho/.config/i3/config
 bindsym $alt+s exec --no-startup-id subl3
 bindsym Print exec --no-startup-id scrot ~/Imágenes/capt-$(date '+%Y-%m-%d-%H%M%S').png
 bindsym $alt+y exec --no-startup-id smplayer $(xsel -o)
@@ -325,7 +323,7 @@ bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $mod+F3 exec --no-startup-id networkmanager_dmenu
 bindsym $mod+F4 exec --no-startup-id interrobang 
 bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
-bindsym $alt+w exec --no-startup-id $term -e "tmux attach -t weechat"
+bindsym $alt+w exec --no-startup-id $term -e tmux attach -t weechat
 bindsym $alt+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
 bindsym $alt+Shift+v exec --no-startup-id clipmenu
 
