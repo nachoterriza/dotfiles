@@ -45,7 +45,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term --config=$HOME/.config/termite/original
+bindsym $mod+Shift+Return exec $term -e tmux
 
 # kill focused window
 bindsym $mod+Shift+q kill
