@@ -312,7 +312,7 @@ bindsym $alt+f exec --no-startup-id firefox
 bindsym $alt+j exec --no-startup-id jondofox
 bindsym $alt+o exec --no-startup-id opera
 bindsym $alt+m exec --no-startup-id mousepad
-bindsym $alt+v exec --no-startup-id smplayer
+bindsym $alt+v exec --no-startup-id clipmenu
 bindsym $alt+p exec --no-startup-id pcmanfm
 bindsym $alt+i exec --no-startup-id $term -e vim /home/nacho/.config/i3/config
 bindsym $alt+s exec --no-startup-id subl3
@@ -325,7 +325,6 @@ bindsym $mod+F4 exec --no-startup-id interrobang
 bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
 bindsym $alt+w exec --no-startup-id $term -e tmux attach -t weechat
 bindsym $alt+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
-bindsym $alt+Shift+v exec --no-startup-id clipmenu
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev 
