@@ -4,7 +4,7 @@ map <C-c> Y
 set hintchars=qwertyuiopasdfghjklñzxcvbnm
 set nohlsearch
 set noscrollbars
-set editor="st -e nvim -f"
+set editor="st -e vim -u /home/nacho/.ffoxvimrc -f"
 colorscheme indigo-fx3
 
 javascript << EOS
