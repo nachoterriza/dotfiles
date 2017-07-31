@@ -309,6 +309,7 @@ for_window [class="feh"] floating enable
 
 # Programas
 bindsym $alt+f exec --no-startup-id firefox
+bindsym $alt+Shift+f exec --no-startup-id palemoon
 bindsym $alt+j exec --no-startup-id jondofox
 bindsym $alt+o exec --no-startup-id opera
 bindsym $alt+m exec --no-startup-id mousepad
@@ -357,7 +358,6 @@ exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
 exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/beach_sunrise_horizon-1920x1080.jpg
-exec --no-startup-id firefox-sync
 exec --no-startup-id nvdock
 
 client.focused #859900 #859900 #fdf6e3 #6c71c4
