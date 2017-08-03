@@ -345,12 +345,12 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 
 
 # Autostart
-exec --no-startup-id compton
+exec_always --no-startup-id compton
 exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
-exec --no-startup-id firejail feh --bg-scale /home/nacho/Imágenes/wallpapers/beach_sunrise_horizon-1920x1080.jpg
+exec_always --no-startup-id firejail feh --bg-scale -z /home/nacho/Imágenes/wallpapers/wps/
 exec --no-startup-id nvdock
 
 client.focused #859900 #859900 #fdf6e3 #6c71c4
