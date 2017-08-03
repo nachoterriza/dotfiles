@@ -1,0 +1,74 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+#TabsToolbar {
+    background: #073642 !important;
+    height: 20px !important;
+}
+
+.tab-icon-image {
+	display: left !important;
+}
+.tabs-closebutton-box,
+.tabs-border-bottom,
+.tab-close-button {
+	display: none !important;
+}
+
+tabs#tabbrowser-tabs, tabs#tabbrowser-tabs * {
+	-moz-appearance: none !important;
+	border-radius: 0px !important; 
+	border: none !important;
+	border-bottom: 0px none !important;
+	background-image: none !important;
+	margin-top: 0px !important;
+	max-height: 18px !important;
+	min-height: 18px !important;        
+}
+
+tabs#tabbrowser-tabs {
+	background: #073642 !important;
+	padding-top: 0px !important;
+	margin-left: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	border-bottom: 0px none !important;
+	text-align: left !important; /*cambio center por left*/
+	/*box-shadow: inset 0px -4px 2px rgba(0,0,0,0.1) !important;*/
+}
+ 
+.tabbrowser-tab {
+    border: none !important;
+    border-radius: 0 !important;
+    margin-left: -1px !important;
+}
+ 
+.tabbrowser-tab[selected="true"] {
+    color: #fdf6e3 !important;
+    border: #073642 1px solid !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    background: #859900 !important;
+}
+ 
+.tabbrowser-tab:not([selected="true"]) {
+    color: #839496 !important;
+    border: #973542 1px solid !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    background: #073642 !important;
+}
+ 
+.tabs-newtab-button {
+    display: none !important;
+    background: #073642 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+#appmenu-button-container {
+    background: #073642 !important;
+    display: none !important;
+    visibility: hidden !important;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}

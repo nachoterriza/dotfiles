@@ -1,0 +1,17 @@
+map J gT
+map K gt
+colorscheme solarized-dark
+set scrollsteps=1
+set scrolltime=0
+set newtab+=help
+set incfind
+set hlfind
+set findcase=smart
+set wildmode=list:longest,full
+set hintkeys=asdfghjklñqwertyuiopzxcvbnm
+set editor='st -e vim -u /home/nacho/.ffoxvimrc -f'
+set defsearch=sp
+set guioptions=Cs
+hi -a Hint font-size: 10pt !important;
+
+nmap -ex ;P execute "silent !mpv '" + buffer.URL +"' &"
