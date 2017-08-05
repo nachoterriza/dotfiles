@@ -37,8 +37,8 @@ font pango:Inconsolata 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term -e tmux
+bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+Shift+Return exec --no-startup-id $term -e tmux
 
 # kill focused window
 bindsym $mod+Shift+q kill

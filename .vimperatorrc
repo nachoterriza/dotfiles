@@ -5,7 +5,7 @@ set hintchars=qwertyuiopasdfghjklñzxcvbnm
 set nohlsearch
 set noscrollbars
 set editor="st -e vim -u /home/nacho/.ffoxvimrc -f"
-colorscheme indigo-fx3
+colorscheme solarized_dark
 
 javascript << EOS
 hints.addMode("P", "Open with mpv:", (elem, loc) => liberator.execute("silent !/usr/bin/mpv '" + loc + "' &", null, true));
