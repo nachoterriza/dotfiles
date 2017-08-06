@@ -6,10 +6,9 @@ export ZSH=/home/nacho/.oh-my-zsh
 export VISUAL="nvim"
 export EDITOR="nvim"
 export QT_QPA_PLATFORMTHEME="qt5ct"
-#export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
-#export GTK_THEME=Arc:darker
 export GTK2_RC_FILES=/home/nacho/.gtkrc-2.0
 export GTK_THEME=NumixSolarizedDark
+export TERMINFO=/home/nacho/.terminfo/s/st-256color
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
