@@ -7,7 +7,7 @@ export VISUAL="nvim"
 export EDITOR="nvim"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export GTK2_RC_FILES=/home/nacho/.gtkrc-2.0
-export GTK_THEME=NumixSolarizedDark
+export GTK_THEME=NumixSolarizedDarkGreen
 export TERMINFO=/home/nacho/.terminfo/s/st-256color
 
 # Set name of the theme to load. Optionally, if you set this to "random"

@@ -200,7 +200,7 @@ visualizer_look = +|
 ## Note: colors can be nested.
 ##
 #
-song_list_format = "    $(15)%t$(end)$R $(11)%A$(end) ($(cyan)%l$(end))    "
+song_list_format = "    $(15)%t$(end)$R $(11)%a$(end) ($(cyan)%l$(end))    "
 #
 song_status_format = " $(15)%a$(end) $4⟫$7⟫$0 $(13)%t$(end) $4⟫$7⟫$0  $(11)%b$(end)"
 #
@@ -511,7 +511,7 @@ color1 = 13
 #
 color2 = 15
 #
-main_window_highlight_color = cyan
+#main_window_highlight_color = cyan
 #
 progressbar_color = 1
 #
@@ -521,7 +521,7 @@ progressbar_elapsed_color = 11
 #
 alternative_ui_separator_color = 11
 #
-active_column_color = 4
+#active_column_color = 4
 #
 #window_border_color = green
 #
