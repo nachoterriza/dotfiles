@@ -1,0 +1,6 @@
+set selection-clipboard clipboard
+set recolor-lightcolor "#002b36"
+set recolor-darkcolor "#839496"
+set statusbar-basename "true"
+set window-title-basename "true"
+set adjust-open "width"
