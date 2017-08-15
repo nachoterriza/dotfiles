@@ -2,6 +2,8 @@ set selection-clipboard clipboard
 set recolor-lightcolor "#002b36"
 set recolor-darkcolor "#839496"
 set recolor-reverse-video "true"
+map <C-i> set recolor-reverse-video
+map <C-k> set recolor-keephue
 set inputbar-fg "#839496"
 set inputbar-bg "#002b36"
 set statusbar-fg "#002b36"
