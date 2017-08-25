@@ -91,6 +91,7 @@ unsetopt AUTO_CD
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias optirun="vblank_mode=0 optirun"
 alias vim="nvim"
+alias dmesg="sudo dmesg --color=always"
 
 # Fix Inicio y Fin
 bindkey "[7~" beginning-of-line
