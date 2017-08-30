@@ -9,7 +9,6 @@
 #define S_cyan          #2aa198
 #define S_green         #859900
 
-
 ! Dark
 
 #define S_base03        #002b36
@@ -23,11 +22,9 @@
 
 urxvt*font: xft:Inconsolata:pixelsize=14
 urxvt*termName:         xterm-256color
-!urxvt*background:       #060606
-!urxvt*foreground:       #d7d0c7
 urxvt*scrollBar:        false
 urxvt*matcher.button:   1
-!urxvt.transparent:    true
+urxvt.transparent:    false
 urxvt*allow_bold:    true
 urxvt*letterSpace: -1
 
@@ -36,17 +33,8 @@ Xft*antialias:          false
 Xft*hinting:            full
 
 URxvt*geometry: 85x30
-!URxvt*fading:      30 
-URxvt*tintColor:     #ffffff
-!URxvt*shading:      15 
-URxvt*inheritPixmap:    true 
-
-!URxvt*colorIT:   #85af5f
-!URxvt*colorBD:   #d7d7d7
-!URxvt*colorUL:   #87afd7
-!
-!URxvt*cursorColor:    #c0c5ce
-!URxvt*cursorColor2:   #151515
+URxvt*tintColor:     #000000
+!URxvt*inheritPixmap:    true 
 
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
@@ -55,34 +43,6 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
-!! Special
-!*.foreground:	#c0c5ce
-!*.background:	#2b303b
-!
-!! Black 
-!*color0:  #2b303b
-!*color8:  #65737e
-!! DarkRed + Red
-!*color1:  #bf616a
-!*color9:  #bf616a
-!! DarkGreen + Green
-!*color2:  #a3be8c
-!*color10: #a3be8c
-!! DarkYellow + Yellow
-!*color3:  #ebcb8b
-!*color11: #ebcb8b
-!! DarkBlue + Blue
-!*color4:  #8fa1b3
-!*color12: #8fa1b3
-!! DarkMagenta + Magenta
-!*color5:  #b48ead
-!*color13: #b48ead
-!!DarkCyan + Cyan (both not tango)
-!*color6:  #96b5b4
-!*color14: #96b5b4
-!! LightGrey + White
-!*color7:  #c0c5ce
-!*color15: #eff1f5
 *.background:              S_base03
 *.foreground:              S_base0
 !*.fading:                  30
