@@ -1,110 +1,22 @@
-! Common
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
 
-#define S_yellow        #b58900
-#define S_orange        #cb4b16
-#define S_red           #dc322f
-#define S_magenta       #d33682
-#define S_violet        #6c71c4
-#define S_blue          #268bd2
-#define S_cyan          #2aa198
-#define S_green         #859900
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
 
-
-! Dark
-
-#define S_base03        #002b36
-#define S_base02        #073642
-#define S_base01        #586e75
-#define S_base00        #657b83
-#define S_base0         #839496
-#define S_base1         #93a1a1
-#define S_base2         #eee8d5
-#define S_base3         #fdf6e3
-
-urxvt*font: xft:Inconsolata:pixelsize=14
-urxvt*termName:         xterm-256color
-!urxvt*background:       #060606
-!urxvt*foreground:       #d7d0c7
-urxvt*scrollBar:        false
-urxvt*matcher.button:   1
-!urxvt.transparent:    true
-urxvt*allow_bold:    true
-urxvt*letterSpace: -1
-
-Xft*dpi:                96
-Xft*antialias:          false
-Xft*hinting:            full
-
-URxvt*geometry: 85x30
-!URxvt*fading:      30 
-URxvt*tintColor:     #ffffff
-!URxvt*shading:      15 
-URxvt*inheritPixmap:    true 
-
-!URxvt*colorIT:   #85af5f
-!URxvt*colorBD:   #d7d7d7
-!URxvt*colorUL:   #87afd7
-!
-!URxvt*cursorColor:    #c0c5ce
-!URxvt*cursorColor2:   #151515
-
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintfull
-Xft.hinting: 1
-Xft.antialias: 1
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
 Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
 
-!! Special
-!*.foreground:	#c0c5ce
-!*.background:	#2b303b
-!
-!! Black 
-!*color0:  #2b303b
-!*color8:  #65737e
-!! DarkRed + Red
-!*color1:  #bf616a
-!*color9:  #bf616a
-!! DarkGreen + Green
-!*color2:  #a3be8c
-!*color10: #a3be8c
-!! DarkYellow + Yellow
-!*color3:  #ebcb8b
-!*color11: #ebcb8b
-!! DarkBlue + Blue
-!*color4:  #8fa1b3
-!*color12: #8fa1b3
-!! DarkMagenta + Magenta
-!*color5:  #b48ead
-!*color13: #b48ead
-!!DarkCyan + Cyan (both not tango)
-!*color6:  #96b5b4
-!*color14: #96b5b4
-!! LightGrey + White
-!*color7:  #c0c5ce
-!*color15: #eff1f5
-*.background:              S_base03
-*.foreground:              S_base0
-!*.fading:                  30
-*.fadeColor:               S_base03
-*.cursorColor:             S_base1
-*.pointerColorBackground:  S_base01
-*.pointerColorForeground:  S_base1
-
-*color0:                  S_base02
-*color1:                  S_red
-*color2:                  S_green
-*color3:                  S_yellow
-*color4:                  S_blue
-*color5:                  S_magenta
-*color6:                  S_cyan
-*color7:                  S_base2
-*color9:                  S_orange
-*color8:                  S_base03
-*color10:                 S_base01
-*color11:                 S_base00
-*color12:                 S_base0
-*color13:                 S_violet
-*color14:                 S_base1
-*color15:                 S_base3
-
+XTerm*background: #2b2b2b
+XTerm*foreground: #e7e7e7
+XTerm*pointerColor: #16A085
+XTerm*faceName: Fixed
+XTerm*faceSize: 11
