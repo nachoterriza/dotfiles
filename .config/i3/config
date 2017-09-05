@@ -35,7 +35,8 @@ bindsym $mod+Shift+Return exec --no-startup-id $term -e tmux
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+F1 exec rofi -show run -run-command "zsh -i -c '{cmd}'"
+bindsym $mod+F1 exec scripts/rofi_run
+bindsym $mod+Shift+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -165,13 +166,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 smart_gaps on
+smart_borders on
 
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
 new_window none
 new_float none
-hide_edge_borders vertical
+hide_edge_borders smart
 
 set $Locker i3lock -uti ~/Imágenes/lock.png && sleep 1
 
@@ -303,7 +305,7 @@ bindsym $alt+t exec --no-startup-id mpc add $(youtube-dl -g $(xsel -o))
 bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $mod+F3 exec --no-startup-id networkmanager_dmenu
 bindsym $mod+F4 exec --no-startup-id interrobang 
-bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
+#bindsym $alt+h exec --no-startup-id wine ~/.PlayOnLinux/wineprefix/hearthstone/drive_c/'Program Files'/Battle.net/'Battle.net Launcher.exe'
 bindsym $alt+w exec --no-startup-id $term -e tmux attach -t weechat
 bindsym $alt+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
 
@@ -337,7 +339,7 @@ exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
-exec_always --no-startup-id firejail feh --bg-scale -z /home/nacho/Imágenes/wallpapers/wps/
+exec_always --no-startup-id scripts/background
 exec --no-startup-id nvdock
 
 client.focused #859900 #859900 #fdf6e3 #6c71c4
