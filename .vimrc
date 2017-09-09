@@ -3,7 +3,7 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'dracula/vim'
+"Plug 'dracula/vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bling/vim-airline'

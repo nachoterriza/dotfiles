@@ -9,7 +9,7 @@ set hlfind
 set findcase=smart
 set wildmode=list:longest,full
 set hintkeys=asdfghjklñqwertyuiopzxcvbnm
-set editor='st -e vim -u /home/nacho/.ffoxvimrc -f'
+set editor='st -e nvim -u /home/nacho/.ffoxvimrc -f'
 set defsearch=sp
 set guioptions=Cs
 hi -a Hint font-size: 10pt !important;
