@@ -8,6 +8,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
+Plug 'dag/vim-fish'
 
 function! BuildYCM(info)
   " info is a dictionary with 3 fields
