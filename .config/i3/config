@@ -289,6 +289,7 @@ for_window [title="pinentry-gtk-2"] floating enable
 for_window [title="manu"] floating enable
 for_window [title="manu"] resize set 644 800
 for_window [title="manu"] move position center
+for_window [title="manu"] sticky enable
 
 #for_window [class="Kdesudo"] border pixel 0
 #for_window [class="Firefox"] border pixel 0
