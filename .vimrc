@@ -47,7 +47,7 @@ let g:Show_diagnostics_ui = 1 "default 1
 "Turning this off will also turn off the YcmErrorLine and YcmWarningLine
 "highlighting
 let g:ycm_enable_diagnostic_signs = 1
-let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_enable_diagnostic_highlighting = 1
 let g:ycm_always_populate_location_list = 1 "default 0
 let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
 
