@@ -3,10 +3,9 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
-"Plug 'dracula/vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
 
@@ -19,6 +18,7 @@ function! BuildYCM(info)
     !./install.py
   endif
 endfunction
+
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 
@@ -26,6 +26,9 @@ call plug#end()
 
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 let g:EclimCompletionMethod = 'omnifunc'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+"let g:airline_solarized_bg = 'dark'
 
 "function! CleverTab()
 "	if strpart( getline('.'), 0, col('.')-1) =~ '^\s*$'
@@ -39,8 +42,6 @@ let g:EclimCompletionMethod = 'omnifunc'
 
 se nu
 syntax on
-"colorscheme dracula
-"colorscheme lucario
 colorscheme solarized
 set background=dark
 set nohlsearch
@@ -52,13 +53,6 @@ set modelines=0
 set encoding=utf-8
 set scrolloff=3
 set hidden
-"set relativenumber
-
-"set wrap
-"set textwidth=79
-"set formatoptions=qrn1
-"set colorcolumn=85
-
 set expandtab
 set shiftwidth=4
 set tabstop=4
