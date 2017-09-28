@@ -15,7 +15,7 @@ function! BuildYCM(info)
   " - status: 'installed', 'updated', or 'unchanged'
   " - force:  set on PlugInstall! or PlugUpdate!
   if a:info.status == 'installed' || a:info.force
-    !./install.py
+    !./install.py --clang-completer
   endif
 endfunction
 
@@ -28,7 +28,7 @@ call plug#end()
 " Airline options
 "
 
-let g:airline_theme = 'dark'
+let g:airline_theme = 'cobalt2'
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#show_tab_type = 0
