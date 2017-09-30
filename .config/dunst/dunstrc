@@ -147,6 +147,8 @@
     # Paths to default icons.
     icon_folders = /usr/share/icons/Adwaita/scalable/status/:/usr/share/icons/Adwaita/scalable/devices/
 
+    max_icon_size = 32
+
 [frame]
     width = 3
     color = "#859900"
@@ -188,6 +190,7 @@
     background = "#cb4b16"
     foreground = "#002b36"
     timeout = 0
+
 
 
 # Every section that isn't one of the above is interpreted as a rules to
