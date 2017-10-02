@@ -296,6 +296,10 @@ for_window [title="manu"] resize set 644 800
 for_window [title="manu"] move position center
 for_window [title="manu"] sticky enable
 
+for_window [title="welcome"] floating enable
+for_window [title="welcome"] resize set 335 360
+for_window [title="welcome"] move position center
+
 #for_window [class="Kdesudo"] border pixel 0
 #for_window [class="Firefox"] border pixel 0
 #for_window [class="Zathura"] border pixel 0
@@ -346,6 +350,7 @@ bindsym $mod+F7 exec --no-startup-id amixer -D pulse sset Master 5%-
 
 # Autostart
 exec_always --no-startup-id compton
+exec --no-startup-id st -t welcome -e /home/nacho/scripts/fts
 exec --no-startup-id clipmenud
 exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
