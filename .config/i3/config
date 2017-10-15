@@ -292,10 +292,10 @@ for_window [title="GLX Spheres"] floating enable
 for_window [title="^glxgears$"] floating enable
 for_window [class="Deluge"] floating enable
 
-for_window [title="manu"] floating enable
-for_window [title="manu"] resize set 644 800
-for_window [title="manu"] move position center
-for_window [title="manu"] sticky enable
+for_window [title="^manu$"] floating enable
+for_window [title="^manu$"] resize set 644 800
+for_window [title="^manu$"] move position center
+for_window [title="^manu$"] sticky enable
 
 for_window [title="welcome"] floating enable
 for_window [title="welcome"] resize set 335 360
