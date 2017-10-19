@@ -9,13 +9,13 @@ rofi.lines:                         3
 ! "Font to use" Set from: Default
 rofi.font:                           monaco 20
 ! "Color scheme for normal row" Set from: Default
-rofi.color-normal:                   #00002b37,#819396,#00002b37,#00003642,#b58900
+rofi.color-normal:                   #002b37,#819396,#002b37,#003642,#b58900
 ! "Color scheme for urgent row" Set from: Default
 ! rofi.color-urgent:                   #002b37,#da4281,#002b37,#003642,#da4281
 ! "Color scheme for active row" Set from: Default
 ! rofi.color-active:                   #002b37,#008ed4,#002b37,#003642,#008ed4
 ! "Color scheme window" Set from: Default
-rofi.color-window:                   #cc002b37,#002b37,#003642
+rofi.color-window:                   #002b37,#002b37,#003642
 ! "Border width" Set from: Default
 ! rofi.bw:                             1
 ! "Location on screen" Set from: Default
@@ -220,3 +220,4 @@ rofi.hide-scrollbar:                 true
 ! rofi.display-windowcd:               
 ! "The display name of this browser" Set from: Default
 ! rofi.display-combi:                  
+!rofi.theme:                             solarized.rasi
