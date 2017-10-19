@@ -9,7 +9,7 @@ rofi.lines:                         3
 ! "Font to use" Set from: Default
 rofi.font:                           monaco 20
 ! "Color scheme for normal row" Set from: Default
-rofi.color-normal:                   #002b37,#819396,#002b37,#003642,#b58900
+rofi.color-normal:                   #002b37,#819396,#002b37,#00003642,#b58900
 ! "Color scheme for urgent row" Set from: Default
 ! rofi.color-urgent:                   #002b37,#da4281,#002b37,#003642,#da4281
 ! "Color scheme for active row" Set from: Default
