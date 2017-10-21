@@ -336,8 +336,8 @@ bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 bindsym XF86AudioNext exec --no-startup-id mpc next
 
 # Brightness up and down
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id scripts/lighter -inc 50
+bindsym XF86MonBrightnessDown exec --no-startup-id scripts/lighter -dec 50
 
 # Volume control
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
@@ -357,6 +357,7 @@ exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
 exec_always --no-startup-id scripts/background
 exec --no-startup-id nvdock
+exec --no-startup-id scripts/lighter -set 749
 
 client.focused #859900 #859900 #fdf6e3 #6c71c4
 client.focused_inactive #073642 #073642 #eee8d5 #6c71c4

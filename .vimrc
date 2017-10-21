@@ -90,6 +90,7 @@ colorscheme solarized
 set background=dark
 set nohlsearch
 set incsearch
+set ignorecase
 set smartcase 
 set wildmenu
 set wildmode=list:longest,full
