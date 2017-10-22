@@ -355,7 +355,7 @@ exec_always --no-startup-id nm-applet
 exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
 exec --no-startup-id scripts/monitor.sh
 exec_always --no-startup-id scripts/background
-exec --no-startup-id nvdock
+#exec --no-startup-id nvdock
 exec --no-startup-id scripts/lighter -set 749
 
 client.focused #859900 #859900 #fdf6e3 #6c71c4
