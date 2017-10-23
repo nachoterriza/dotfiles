@@ -322,7 +322,7 @@ bindsym $mod+F2 exec --no-startup-id scripts/i3_switch_workspace.sh
 bindsym $mod+F3 exec --no-startup-id networkmanager_dmenu
 bindsym $mod+F4 exec --no-startup-id interrobang 
 bindsym $alt+w exec --no-startup-id $term -e tmux attach -t weechat
-bindsym $alt+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
+bindsym $alt+Shift+c exec --no-startup-id xsel -o | dmenu -p Calculate: | xargs echo | bc 2>&1 | dmenu -p Answer: | xsel -i
 
 # Play pause prev next
 bindsym $mod+F9 exec --no-startup-id mpc prev 

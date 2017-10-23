@@ -8,6 +8,8 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 function! BuildYCM(info)
   " info is a dictionary with 3 fields
@@ -73,6 +75,38 @@ nnoremap <F11> :YcmForceCompileAndDiagnostics <CR>
 
 let g:EclimCompletionMethod = 'omnifunc'
 
+"
+" FZF functions
+"
+function! s:line_handler(l)
+  let keys = split(a:l, ':\t')
+  exec 'buf' keys[0]
+  exec keys[1]
+  normal! ^zz
+endfunction
+
+function! s:buffer_lines()
+  let res = []
+  for b in filter(range(1, bufnr('$')), 'buflisted(v:val)')
+    call extend(res, map(getbufline(b,0,"$"), 'b . ":\t" . (v:key + 1) . ":\t" . v:val '))
+  endfor
+  return res
+endfunction
+
+command! FZFLines call fzf#run({'source': <sid>buffer_lines(), 'sink': function('<sid>line_handler'), 'options': '--extended --nth=3..', 'down': '60%'})
+
+" --column: Show column number
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --ignore-case: Case insensitive search
+" --no-ignore: Do not respect .gitignore, etc...
+" --hidden: Search hidden files and folders
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 
 "function! CleverTab()
 "	if strpart( getline('.'), 0, col('.')-1) =~ '^\s*$'
@@ -86,6 +120,7 @@ let g:EclimCompletionMethod = 'omnifunc'
 
 se nu
 syntax on
+let mapleader = ","
 colorscheme solarized
 set background=dark
 set nohlsearch
@@ -116,10 +151,12 @@ set title
 
 map <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
-nnoremap J :tabprevious<CR>
-nnoremap K :tabnext<CR>
+nnoremap J :bprevious<CR>
+nnoremap K :bnext<CR>
 nnoremap <C-t> :tabnew<CR>
+nnoremap <leader>f :call fzf#run({'sink': 'e', 'left': '30%'})<CR>
+nnoremap <leader>b :call fzf#run({'source': map(range(1, bufnr('$')), 'bufname(v:val)'), 'sink': 'e', 'left': '30%'})<CR>
 
-autocmd Filetype c nnoremap <buffer> <F5>:w<CR> :!clear; make<CR> :!./%<<CR>
+autocmd Filetype c nnoremap <buffer> <F5> :w<CR> :!clear; make<CR> :!./%<<CR>
 autocmd Filetype python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 autocmd Filetype java nnoremap <buffer> <F5>:update<Bar>execute '!javac '.shellescape(@%, 1)<CR>
