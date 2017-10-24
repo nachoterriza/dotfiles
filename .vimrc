@@ -118,9 +118,9 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 "
 "inoremap <C-Tab> <C-R>=CleverTab()<CR>
 
-se nu
+set number
 syntax on
-let mapleader = ","
+let mapleader = "ñ"
 colorscheme solarized
 set background=dark
 set nohlsearch
@@ -131,7 +131,7 @@ set wildmenu
 set wildmode=list:longest,full
 set modelines=0
 set encoding=utf-8
-set scrolloff=3
+set scrolloff=9
 set hidden
 set expandtab
 set shiftwidth=4
@@ -149,11 +149,21 @@ set undolevels=1000
 set wildignore=*.swp,*.bak,*.class,*.o
 set title
 
-map <C-e> :NERDTreeTabsToggle<CR>
+nnoremap <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
-nnoremap J :bprevious<CR>
-nnoremap K :bnext<CR>
+
+" tab management
+nnoremap J :tabprevious<CR>
+nnoremap K :tabnext<CR>
 nnoremap <C-t> :tabnew<CR>
+
+"buffer management
+nnoremap <leader>h :bprevious<CR>
+nnoremap <leader>l :bnext<CR>
+nnoremap <leader>q :bdelete<CR>
+nnoremap <leader>e :enew<CR>
+nnoremap <leader>o :only<CR>
+
 nnoremap <leader>f :call fzf#run({'sink': 'e', 'left': '30%'})<CR>
 nnoremap <leader>b :call fzf#run({'source': map(range(1, bufnr('$')), 'bufname(v:val)'), 'sink': 'e', 'left': '30%'})<CR>
 
