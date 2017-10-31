@@ -100,7 +100,7 @@ alias sudo="sudo "
 bindkey "[7~" beginning-of-line
 bindkey "[8~" end-of-line
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # Pastebin client https://ptpb.pw
 pb () {
