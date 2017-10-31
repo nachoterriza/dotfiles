@@ -11,6 +11,7 @@ export GTK2_RC_FILES=/home/nacho/.gtkrc-2.0
 export GTK_THEME=NumixSolarizedDarkGreen
 export TERMINFO=/home/nacho/.terminfo/s/st-256color
 export _JAVA_AWT_WM_NONREPARENTING=1
+export MANPAGER="nvim -c 'set ft=man' -"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
