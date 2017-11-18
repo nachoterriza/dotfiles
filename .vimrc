@@ -26,6 +26,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 call plug#end()
 
+
 "
 " Airline options
 "
@@ -37,6 +38,8 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+
+let g:powerline_pycmd = 'py3'
 
 "
 " YouCompleteMe options
@@ -154,9 +157,9 @@ nnoremap <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
 
 " tab management
-nnoremap J :tabprevious<CR>
-nnoremap K :tabnext<CR>
-nnoremap <C-t> :tabnew<CR>
+"nnoremap J :tabprevious<CR>
+"nnoremap K :tabnext<CR>
+"nnoremap <C-t> :tabnew<CR>
 
 "buffer management
 nnoremap <leader>h :bprevious<CR>
