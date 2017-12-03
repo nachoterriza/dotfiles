@@ -201,6 +201,17 @@ mode "$mode_emacs" {
 
 bindsym $mod+Shift+Escape mode "$mode_emacs"
 
+set $mode_corners Modo Esquinas
+mode "$mode_corners" {
+
+    bindsym $mod+Tab exec --no-startup-id /home/nacho/scripts/corners.sh
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+c mode "$mode_corners"
+
 set $mode_gaps gaps (o) outer, (i) inner, (0) zero, (d) default
 set $mode_gaps_outer outer gaps
 set $mode_gaps_inner inner gaps
