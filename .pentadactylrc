@@ -12,6 +12,6 @@ set hintkeys=asdfghjklñqwertyuiopzxcvbnm
 set editor='st -e nvim -u /home/nacho/.ffoxvimrc -f'
 set defsearch=sp
 set guioptions=Cs
-hi -a Hint font-size: 10pt !important;
+hi -a Hint font-size: 11pt !important;
 
 nmap -ex ;P execute "silent !mpv '" + buffer.URL +"' &"
