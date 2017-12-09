@@ -1,11 +1,11 @@
 /* AGENT_SHEET */
-@-moz-document url-prefix(http://), url-prefix(https://), url-prefix(ftp://), url-prefix(file://), url(about:blank), 
+@-moz-document regexp("^https?://(?!(www\\.)?synology\\.local).*"), url-prefix(ftp://), url-prefix(file://), url(about:blank), regexp("about:(?!addons|app-manager|config|customizing|stylish-edit|downloads|permissions|preferences|sync-tabs|webrtc).*")
 
 /* Best effort to exclude about pages that conflict with Australis-native styling   */
-regexp("about:(?!addons|app-manager|config|customizing|stylish-edit|downloads|permissions|preferences|sync-tabs|webrtc).*")
 
 /*url-prefix("about:neterror")*/
 /* url-prefix("about:"),   */
+/* ,regexp("https?://(www\.)?(?!(synology\.local).*).*") */
 
 {
 
@@ -134,7 +134,7 @@ opacity: 1 !important;
 text-indent: 0 !important;
 }
 
-a:link         {color: #268bd2 !important;} /* hyperlink */
+a:link         {color: #859900 !important;} /* hyperlink */
 a:visited      {color: #6c71c4 !important;}
 a:hover        {color: #b58900 !important; background-color: #073642 !important;}
 a:active       {color: #cb4b16 !important;}
