@@ -70,6 +70,7 @@ let g:ycm_confirm_extra_conf = 1
 let g:ycm_goto_buffer_command = 'same-buffer' "[ 'same-buffer', 'horizontal-split', 'vertical-split', 'new-tab' ]
 let g:ycm_filetype_whitelist = { '*': 1 }
 let g:ycm_key_invoke_completion = '<C-Space>'
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 nnoremap <F11> :YcmForceCompileAndDiagnostics <CR>
 
@@ -142,6 +143,7 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set smarttab
+set splitright
 
 " tell vim to use an undo file
 set undofile
@@ -170,6 +172,10 @@ nnoremap <leader>o :only<CR>
 
 nnoremap <leader>f :call fzf#run({'sink': 'e', 'left': '30%'})<CR>
 nnoremap <leader>b :call fzf#run({'source': map(range(1, bufnr('$')), 'bufname(v:val)'), 'sink': 'e', 'left': '30%'})<CR>
+
+nnoremap <leader>t <C-]>
+
+nnoremap <leader><leader> <C-w><C-w>
 
 autocmd Filetype c nnoremap <buffer> <F5> :w<CR> :!clear; make<CR> :!./%<<CR>
 autocmd Filetype python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
