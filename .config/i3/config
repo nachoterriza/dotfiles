@@ -98,6 +98,8 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+d focus child
 
+focus_follows_mouse no
+
 # next/previous workspace
 bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus left
