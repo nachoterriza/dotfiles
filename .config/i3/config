@@ -265,7 +265,7 @@ bar {
   status_command /home/nacho/scripts/conky-i3bar
 	mode dock
 	position top
-	font pango: Inconsolata, Icons 10
+	font pango: Anonymous Pro, Icons 10
 	strip_workspace_numbers yes
   colors {
     separator #dc322f
