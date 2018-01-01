@@ -138,7 +138,7 @@ set modelines=0
 set encoding=utf-8
 set scrolloff=9
 set hidden
-set expandtab
+set noexpandtab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
