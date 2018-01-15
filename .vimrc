@@ -10,6 +10,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'bfredl/nvim-ipy'
 
 function! BuildYCM(info)
   " info is a dictionary with 3 fields
