@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/scripts:$PATH
+export PATH=/opt/anaconda/bin:$HOME/scripts:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/nacho/.oh-my-zsh
