@@ -10,6 +10,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'mhinz/vim-signify'
+Plug 'majutsushi/tagbar'
 "Plug 'bfredl/nvim-ipy'
 
 function! BuildYCM(info)
@@ -156,6 +159,8 @@ set undolevels=1000
 set wildignore=*.swp,*.bak,*.class,*.o
 set title
 
+set clipboard=unnamedplus
+
 nnoremap <C-e> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.swp$', '\.git$']
 
@@ -177,6 +182,12 @@ nnoremap <leader>b :call fzf#run({'source': map(range(1, bufnr('$')), 'bufname(v
 nnoremap <leader>t <C-]>
 
 nnoremap <leader><leader> <C-w><C-w>
+
+"" Man mapping
+nnoremap K :vertical Man <C-R><C-W><CR>
+
+"" Tagbar mapping
+nnoremap <F8> :TagbarToggle<CR>
 
 autocmd Filetype c nnoremap <buffer> <F5> :w<CR> :!clear; make<CR> :!./%<<CR>
 autocmd Filetype python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
