@@ -262,20 +262,39 @@ mode "$mode_gaps_outer" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	status_command /home/nacho/scripts/conky-i3bar
-		mode dock
-		position top
-		font pango: Anonymous Pro, Icons 10
-		strip_workspace_numbers yes
-		colors {
-			separator #dc322f
-				background #002b36
-				statusline #268bd2
-				focused_workspace #fdf6e3 #859900 #fdf6e3
-				active_workspace #fdf6e3 #6c71c4 #fdf6e3
-				inactive_workspace #586e75 #93a1a1 #002b36
-				urgent_workspace #d33682 #d33682 #fdf6e3
-		}
+# status_command /home/nacho/scripts/conky-i3bar
+	output HDMI-1
+	status_command /usr/bin/bumblebee-status -m mpd cpu sensors memory traffic nvidiagpu xrandr caffeine pasink datetime -p interval=2.5 memory.format="{used}/{total}" datetime.format="%d/%m/%y %H:%M" -t solarized-powerline
+	mode dock
+	position top
+# font pango: Anonymous Pro, Icons 10
+	strip_workspace_numbers yes
+	colors {
+		separator #dc322f
+			background #002b36
+			statusline #268bd2
+			focused_workspace #fdf6e3 #859900 #fdf6e3
+			active_workspace #fdf6e3 #6c71c4 #fdf6e3
+			inactive_workspace #586e75 #93a1a1 #002b36
+			urgent_workspace #d33682 #d33682 #fdf6e3
+	}
+}
+
+bar {
+	output eDP-1
+	status_command /usr/bin/bumblebee-status -m traffic xrandr pasink battery time -p interval=2.5 time.format="%H:%M" -t solarized-powerline
+	mode dock
+	position top
+	strip_workspace_numbers yes
+	colors {
+		separator #dc322f
+		background #002b36
+		statusline #268bd2
+		focused_workspace #fdf6e3 #859900 #fdf6e3
+		active_workspace #fdf6e3 #6c71c4 #fdf6e3
+		inactive_workspace #586e75 #93a1a1 #002b36
+		urgent_workspace #d33682 #d33682 #fdf6e3
+	}
 }
 
 bindsym $mod+b bar mode toggle

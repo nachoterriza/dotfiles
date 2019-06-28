@@ -116,7 +116,7 @@ random_string () {
 
 # Generate random string including special characters (for passwords)
 random_passwd () {
-        cat /dev/urandom | tr -cd 'a-zA-Z0-9 !"#$%&()*+,-./:;<=>?@[\]^_`{|}~' | fold -w ${1:-32} | head -n 1 
+        cat /dev/urandom | tr -cd 'a-zA-Z0-9 !"#$%&()*+,-./:;<=>?@[\]^_`{|}~' | fold -w ${1:-32} | head -n 1
 }
 
 # Start the gpg-agent if not already running
@@ -141,4 +141,4 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-exec fish
+#exec fish

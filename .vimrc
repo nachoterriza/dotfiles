@@ -13,6 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mhinz/vim-signify'
 Plug 'majutsushi/tagbar'
+Plug 'lambdalisue/suda.vim'
 "Plug 'bfredl/nvim-ipy'
 
 function! BuildYCM(info)
